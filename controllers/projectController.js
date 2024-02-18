@@ -42,6 +42,10 @@ exports.getallproject=async(req,res)=>{
         language:{
             $regex:searchkey,
             $options:"i"
+        },
+        title:{
+            $regex:searchkey,
+            $options:"i"
         }
     }
     try {
